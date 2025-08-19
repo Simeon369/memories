@@ -44,6 +44,22 @@ header .user{
     border-radius: 50%;
 }
 
+header .right-icons{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+header .menu{
+    display: none;
+
+}
+
+header .menu img{
+    width: 40px;
+    height: 40px;
+}
+
 header button{
     background-color: rgb(231, 3, 3);
     padding: 5px 20px;
@@ -115,3 +131,25 @@ main .grid .card-image img{
 .like img{
     width: 20px;
 }
+
+@media only screen and (max-width: 769px) {
+    main .grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+}
+
+@media only screen and (max-width: 426px) {
+    main .grid{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    header .right-icons{
+        display: none;
+    }
+
+    header .menu{
+        display: block;
+    }
+    
+}
+
